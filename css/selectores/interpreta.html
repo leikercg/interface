@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    i+b { /*tienen que ser hermanas y seguir este orden, se pone en rojo la segunda*/
+      color: red
+    }
+
+    .nivel1 { /*se pone en verde las etiquetas de clase nivel1*/
+      color: green
+    }
+
+    .nivel2 {
+      color: blue
+    }
+
+    ul ul .nivel2 { /*aqui hay tres selectores ANIDADOS, sin relación estricta y se cumple*/
+      font-size:large
+    }
+
+    ul ul li {
+      font-size: x-small; /*Hay tres selectores ANIDADOS, sin relación estricta, pero se cumple*/
+      color: yellow
+    }
+
+  </style>
+  <title>document</title>
+</head>
+
+<body>
+  <h1>
+    <p><i>Título</i>: <b>Anidamiento y agrupamiento</b>
+      de selectores</p>
+  </h1>
+  <ul>
+    <li class="nivel1">Agrupamiento</li>
+    <li class="nivel1">Anidamiento</li>
+    <ul>
+      <li>Anidamiento común</li>
+      <li class="nivel2">Anidamiento de hijos</li>
+      <li class="nivel2">Anidamiento de adyacentes</li>
+    </ul>
+  </ul>
+</body>
+</html>
