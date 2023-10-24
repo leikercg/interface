@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  table {
+    width: 400px;
+    height: 400px; /*uso porcentajes para que sean iguales los cuadrados*/
+    padding-top: 2px;
+    border: 2px solid black;
+    border-collapse: separate;
+    /* dice como debe ser los bordes de las celdas*/
+    border-spacing: 2px;
+    /*si está declarada border-collapse separe dice cuanta debe ser la separación*/
+    /*table-layout: ;*//*decide si se ajusta la celda al contenido o es fijo*/
+  }
+
+  td {
+    width: 25%; /*daba error por que habia que añadir un ancho*/
+    height: 25%;
+    border: 2px solid black;
+    padding: 0px;
+  }
+
+  .rojo{
+    background-color: red;
+  }
+  .amarillo{
+    background-color: yellow;
+  }
+  .azul{
+    background-color: blue;
+  }
+  .naranja{
+    background-color: orange;
+  }
+
+
+
+</style>
+
+<body>
+
+  <table >
+    <tr>
+      <td colspan="4" class="naranja"></td>
+    </tr>
+    <tr>
+      <td class="amarillo"></td>
+      <td colspan="3" class="azul"> </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="amarillo"> </td>
+      <td class="rojo"></td>
+      <td class="azul"></td>
+    </tr>
+    <tr>
+      <td class="amarillo"></td>
+      <td class="rojo" colspan="3"></td>
+
+    </tr>
+  </table>
+</body>
+</html>

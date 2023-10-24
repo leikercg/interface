@@ -6,62 +6,110 @@
   <title>Document</title>
 </head>
 <style>
-  table {
-    padding-top: 2px;
+  .contenedor {
+
     border: 2px solid black;
-    border-collapse: separate;
-    /* dice como debe ser los bordes de las celdas*/
-    border-spacing: 2px;
-    /*si está declarada border-collapse separe dice cuanta debe ser la separación*/
-    /*table-layout: ;*//*decide si se ajusta la celda al contenido o es fijo*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*tamaño y numero de columnas segun nombre*/
+
   }
 
-  td {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
+  div>div {
+    border: 0.5px solid black;
   }
 
-  .rojo{
-    background-color: red;
-  }
-  .amarillo{
-    background-color: yellow;
-  }
-  .azul{
-    background-color: blue;
-  }
-  .naranja{
-    background-color: orange;
+  .item8 {
+    grid-row: 2 / span 3;
+    grid-column: 2;
   }
 
-  #especial{
-    width: 300px;
-    background-color: red;
+  .item9 {
+    grid-row: 2 / span 3;
+    grid-column: 3;
   }
+
+  .item10 {
+    grid-row: 2 / span 3;
+    grid-column: 4;
+  }
+
+  .item11 {
+    grid-row: 2 / span 2;
+    grid-column: 5;
+  }
+
+  .item12 {
+    grid-row: 2 / span 2;
+    grid-column: 6;
+  }
+
+  .item18 {
+    grid-column: 2 / span 5;
+    grid-row: 5;
+  }
+
+  .item21 {
+    grid-row: 6 / span 3;
+    grid-column: 3;
+  }
+
+  .item26 {
+    grid-row: 7 / span 2;
+    grid-column: 2;
+  }
+
+  .item27 {
+    grid-row: 7 / span 2;
+    grid-column: 4;
+  }
+
+  .item28 {
+    grid-row: 7 / span 2;
+    grid-column: 5;
+  }
+
+  .item29 {
+    grid-row: 7 / span 2;
+    grid-column: 6;
+  }
+
 
 </style>
 
 <body>
-
-  <table >
-    <tr>
-      <td colspan="4" class="naranja"></td>
-    </tr>
-    <tr>
-      <td class="amarillo"></td>
-      <td colspan="3" class="azul"> </td>
-    </tr>
-    <tr>
-      <td colspan="2" class="amarillo"> </td>
-      <td class="rojo"></td>
-      <td class="azul"></td>
-    </tr>
-    <tr>
-      <td class="amarillo"></td>
-      <td id="especial" colspan="3"></td>
-
-    </tr>
-  </table>
+  <div class="contenedor">
+    <div class="item1">Horas</div>
+    <div class="item2">Lunes</div>
+    <div class="item3">Martes</div>
+    <div class="item4">Miercoles</div>
+    <div class="item5">Jueves</div>
+    <div class="item6">Viernes</div>
+    <div class="item7">1</div>
+    <div class="item8">DWES</div>
+    <div class="item9">DWES</div>
+    <div class="item10">DWES</div>
+    <div class="item11">DWEC</div>
+    <div class="item12">EIE</div>
+    <div class="item13">2</div>
+    <div class="item14">3</div>
+    <div class="item15">DAW</div>
+    <div class="item16">ING</div>
+    <div class="item17">-</div>
+    <div class="item18">RECREO</div>
+    <div class="item19">4</div>
+    <div class="item20">EIE</div>
+    <div class="item21">DIW</div>
+    <div class="item22">DIW</div>
+    <div class="item23">DAW</div>
+    <div class="item24">ING</div>
+    <div class="item25">5</div>
+    <div class="item26">DAW</div>
+    <div class="item27">DWEC</div>
+    <div class="item28">DIW</div>
+    <div class="item29">DWEC</div>
+    <div class="item30">6</div>
+  </div>
 </body>
 </html>
