@@ -1,0 +1,35 @@
+p+p {
+    font-weight: bolder;
+}
+
+p .resaltar {
+    background-color: yellowgreen;
+    font-size: 110%;
+}
+
+
+
+
+[href*=zip]{
+    background: url(zip-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
+
+[href*=pdf] {
+    background: url(pdf-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
+
+[href*=soplaelcierzo],[href*=marca],[href*=resto] {
+    background: url(external-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
