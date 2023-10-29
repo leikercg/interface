@@ -3,7 +3,45 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Ejercicio 2.8.3</title>
-		<link rel="stylesheet" href="seudo.css">
+		<style>
+			p+p {
+    font-weight: bolder;
+}
+
+p .resaltar {
+    background-color: yellowgreen;
+    font-size: 110%;
+}
+
+
+
+
+[href*=zip]{
+    background: url(zip-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
+
+[href*=pdf] {
+    background: url(pdf-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
+
+[href*=soplaelcierzo],[href*=marca],[href*=resto] {
+    background: url(external-link.png) no-repeat 100%;
+    background-position: left;
+    padding: 30px;
+    background-size: 15px;
+
+}
+
+		</style>
+		<!--<link rel="stylesheet" href="seudo.css">-->
 	</head>
 	<body>
 		<p>A continuación la <span class="resaltar">lista de enlaces:</span> a páginas de amigos:</p>
