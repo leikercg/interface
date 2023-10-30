@@ -151,18 +151,17 @@ img {
 }
 
 #contenido #principal{
-width: 73%;
-}
-#contenido #secundario{
-width: 21%;
-}
-#lateral{
-width: 20.5%;
-
-}
-#contenido{
-width: 77%;
-}
+  width: 73%;
+  }
+  #contenido #secundario{
+  width: 21%;
+  }
+  #lateral{
+  width: 21%;
+  }
+  #contenido{
+  width: 77%;
+  }
 
 /*--------------Parte 2--------*/
 #cabecera,
