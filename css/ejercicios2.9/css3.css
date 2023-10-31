@@ -150,18 +150,10 @@ img {
   margin-top: 1em;
 }
 
-#contenido #principal{
-  width: 73%;
-  }
-  #contenido #secundario{
-  width: 21%;
-  }
-  #lateral{
-  width: 21%;
-  }
-  #contenido{
-  width: 77%;
-  }
+#contenedor #principal{
+  width: 74%;
+}
+
 
 /*--------------Parte 2--------*/
 #cabecera,
@@ -209,6 +201,7 @@ img {
 }
 #logo h1{
   background-image: url(imagenes/logo.gif);
+  background-position: center;
 }
 
 
