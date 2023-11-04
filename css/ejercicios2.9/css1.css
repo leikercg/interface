@@ -114,12 +114,13 @@ img {
    ================================================================== */
 
 #cabecera {
-  padding: 1em;
+  padding: 1em; /*aplica un relleno por los 4 lados al id cabecera*/
 }
 
 #menu {
   padding: 0.5em;
   margin-bottom: 0.5em;
+  /*aplica un relleno por los 4 lados y un margen inferior al id menu*/
 }
 
 #noticias,
@@ -127,6 +128,7 @@ img {
 #principal,
 #secundario {
   padding: 0.5em;
+  /*aplica un relleno por los 4 lados a los id noticias, publicidad, principal y secundario*/
 }
 
 #pie {
@@ -135,21 +137,27 @@ img {
 
   margin-top: 1em;
 
+  /*aplica un relleno superior e inferior ademas de un margen superior al id pie*/
+
 }
 
 .articulo+.articulo {
   margin-top: 1em;
+  /*aplica un margen superior al elemento de la clase artculo (el 2º) que esté adyacente a otro elemento de la clase artículo (el 1º)*/
 }
 
 .articulo img {
   margin: 0.5em;
+  /*aplica un margen por los 4 lados a las imagenes que estén dentro de elemento de la clase artículo*/
 }
 
 #publicidad {
   margin-top: 1em;
+  /*aplica un margen superior a id publicidadd*/
 }
 
 #contenedor #principal{
   width: 74%;
+  /*sobrescribimos el ancho del id principal, para que el diseño se pareza al de la imagen final1*/
 }
 

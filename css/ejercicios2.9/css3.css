@@ -188,20 +188,25 @@ img {
 /*---------parte 3--------------------------------*/
 #noticias, #pie{
   background-color: #F8F8F8;
+  /*se aplica un color de fondo gris claro a los elmento con id noticias y pie*/
 }
 #publicidad {
   background-color: #FFF6CD;
+  /*se aplica a elemento publicidad un fondo de color amarillo claro*/
 }
 #secundario h2{
   background-color:#DB905C  ;
+  /*se aplica a todos los h2 que esten dentro del elemento secundario un fondo de color naranja*/
 }
 
 #menu{
   background-image: url(imagenes/fondo_menu.gif);
+  /*se establece como fondo del elemento menu una imagen mediante una url*/
 }
 #logo h1{
   background-image: url(imagenes/logo.gif);
   background-position: center;
+  /*para ver el logotipo detras del h1 que contiene la palabra logotipo le aplicamos a ese h1 en concreto un fondo con la imagen del logotipo mediante un URL, usamos background-position center para que se parezca a la imagen final 3*/
 }
 
 
