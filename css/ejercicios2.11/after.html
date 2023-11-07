@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*para insertar contenido despues del contenido de un elemento*/
+    .contenido1:hover::after{
+      content: " contenido";
+    }
+    /*Para sustituir contenido de un elemento*/
+    .contenido2::after{
+      content: "contenido";
+    }
+    .contenido2:hover::after{
+      content: "nuevo contenido";
+      background-color: aqua;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="contenido1">contenido</p>
+  <p class="contenido2"></p><!--no ponemos nada para añadirlo con el after-->
+
+</body>
+</html>
