@@ -8,22 +8,26 @@
   <style>
     html,
     body {
+      /*aplico este estilo para centrar el contenido*/
       display: flex;
       justify-content: center;
     }
 
     #contenedor {
-      width: 95%;
+      width: 100%;
       margin: auto;
     }
 
     header {
+      /*la imagen mide 990px de ancho, por lo que el ancho de la pagina sera 990px*/
       width: 990px;
 
     }
 
     #cabeceraInf {
-      height: 254px;
+      /*le aplico estilo de posicionamiento relativo para que sus item cogan un contexto y solo se muevan dentro del contenedor sin afectar a los demas elementos*/
+      position: relative;
+
     }
 
     #titulo {
@@ -35,20 +39,47 @@
       color: white;
     }
 
-    #logotipo{
-      position: relative;
-      top: -140px;
+    #logotipo {
+      position: absolute;
+      /*se posicona con respecto al contenedor */
+      top: 20px;
+      /*indico la posicion que quiero dentro del contenedor*/
       left: 30px;
 
-   }
+    }
 
-   #menu{
-    background-color: black;
-    height: 70px;
-   }
+    #menu {
+      /*declaro el fondo, el ancho 990px y una altura y estilo aproximada*/
+      background-color: black;
+      height: 50px;
+      width: 990px;
+      display: flex;
+      color: white;
+    }
+
+    #recetas {
+      display: flex;
+      background-color: green;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+    }
+
+    #recetas:hover{
+      background-color: green;
+      height: 300px;
+    }
+    #menu{
+      height: 70px;
+      width: 900px;
 
 
 
+    }
+    #navegador{
+      display: flex;
+
+    }
 
   </style>
 </head>
@@ -61,14 +92,19 @@
         <div id="titulo">
           <h1>Postres Naturales</h1>
         </div>
-        <div id="logotipo"><img src="recetas/logotipo.png" alt="Logotipo"></div>
+        <img id="logotipo" src="recetas/logotipo.png" alt="Logotipo">
       </div>
-    </header>
 
-    <div id="menu">
-      recetas
+    </header>
+    <div id="navegador">
+      <div id="recetas">Recetas</div>
+      <div id="menu"></div>
     </div>
+
+
   </div>
+
+
 
 </body>
 </html>
