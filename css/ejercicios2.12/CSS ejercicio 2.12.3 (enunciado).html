@@ -4,7 +4,54 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Ejercicio 2.12.3</title>
 		<style>
-			
+
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#header{
+				width: 500px;
+				margin: auto;
+			}
+			ul{
+				list-style: none;
+			}
+			.nav li a{
+				background-color: black;
+				color: white;
+				padding: 10px 15px;
+				display: block;
+
+			}
+			.nav >li a:hover{/*selecciona cualquier elemento nav que tenga como hijo directo un li que tenga un enlace en estado hover*/
+				background: red;
+			}
+
+			.nav >li{/*selecciona los enlaces principales y los pone horizontal*/
+				float: left;
+			}
+
+			.nav li ul{/*esconde todos lo hijos, menos los principales*/
+				min-width: 140px;
+				position: absolute;
+				display: none;
+
+			}
+
+			.nav li:hover ul{/*elementos li en estado hover con hijos*/
+				display: block;
+
+			}
+			.nav li ul li{/*para posicionar el submenu*/
+				position: relative;
+			}
+
+			.nav li ul li ul{
+				top: 0px;
+				left: 140px;
+			}
+
+
 		</style>
 	</head>
 	<body>
