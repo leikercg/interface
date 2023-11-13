@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+    body,
+    html {
+      display: flex;
+      justify-content: center;
+
+
+    }
+
+    .contenedor {
+      width: 990px;
+      /*definimos un ancho y margin auto para centrar el contenedor respecto  del body*/
+      margin: auto;
+
+    }
+
+    #titulo {
+      position: relative;
+      /*le damos un contexto relativo a este div para porder darle posicion absoluta a sus elementos hijos respecgo al contenedor*/
+    }
+
+    #textoTitulo {
+      /*centramos el titulo respecto su contenedor*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(82, 55, 21);
+      height: 100px;
+      font-size: xx-large;
+      color: rgb(255, 253, 253);
+    }
+
+    #logotipo {
+      /*posiconamos con posición aboluta respecto a su contenedor, (sale del flujo normal de los elemenntos)*/
+      /*OJO con absolute al salir del flujo ya no se cuenta para calcular el tamaño del contenedor*/
+      position: absolute;
+      left: 30px;
+      top: -3px;
+    }
+
+    nav{
+      position: sticky;
+      top: 0;
+      z-index: 1;
+
+
+    }
+    #navegador {
+      height: 60px;
+      background-color: black;
+    }
+
+
+
+
+
+
+
+
+    #menu {
+      width: 100px;
+      height: 60px;
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(17, 137, 17);
+
+    }
+
+    ul,li{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #padre{
+      position: relative;
+    }
+
+    #padre li a {
+      background-color:white;
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+
+
+    }
+
+    #padre>ul{
+      position: absolute;
+      top: 39.5px;
+      left: -25px;
+    }
+
+    #padre li a:hover{
+      background-color:rgb(163, 163, 168) ;
+
+    }
+
+    #padre ul li{
+      display: none;
+      min-width: 140px;
+    }
+
+    #menu:hover ul>li {
+      display:block ;
+    }
+
+
+
+
+
+
+
+
+
+    main {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      background-color: antiquewhite;
+      flex-direction: column;
+      /*cambiamos el eje pricipal para que el flujo se por columna*/
+      align-items: center;
+      /*usamos esto para alinear la columna en el centro*/
+    }
+
+    .receta {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 600px;
+      height: auto;
+      border: solid 3px rgb(178, 171, 171);
+      padding: 10px;
+      background-color: aliceblue;
+      position: relative;
+
+    }
+
+    .receta img {
+      position: absolute;
+      left: 510px;
+      top: 10px;
+      height: 80px;
+      width: 100px;
+
+    }
+
+    .receta p {
+      margin-top: 30px;
+    }
+
+    .receta h3 {
+      margin-top: 40px;
+    }
+
+    footer {
+      height: 60px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer div {
+      margin: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="contenedor">
+    <header>
+      <img src="recetas/cabecera.jpg" alt="cabecera">
+      <div id="titulo">
+        <div id="textoTitulo">Postres Naturales</div>
+        <div id="logotipo"><img src="recetas/logotipo.png" alt=""></div>
+      </div>
+    </header>
+    <nav>
+      <div id="navegador">
+
+
+
+
+
+
+        <div id="menu">
+          <ul id="padre" >
+            <li>Recetas</li>
+            <ul>
+              <li><a href="#uno">Tiramisú</a></li>
+              <li><a href="#dos">Tarta de chocolate</a></li>
+              <li><a href="#tres">Crema catalana</a></li>
+              <li><a href="#cuatro">Dulce de leche</a></li>
+              <li><a href="#cinco">Tarta de manzana</a></li>
+              <li><a href="#seis">Arroz con leche</a></li>
+            </ul>
+          </ul>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </nav>
+    <main>
+      <div class="receta" id="uno">
+        <h3>Tiramisú</h3>
+        <img src="recetas/miniaturas/tiramisu.jpg" alt="Tiramisú">
+        <p>En un bol se prepara la crema para el tiramisú: se mezcla el queso mascarpone con las yemas de huevo y el azúcar. Aparte, se baten las claras de huevo a punto de nieve. Finalmente, se incorporan las claras al bol del mascarpone. Se bate con cuidado, con las varillas, realizando movimientos envolventes, para no perder el aire de las claras montadas, (como haciendo una mousse).
+          En una bandeja honda, montamos el postre, para ello, vamos colocando capas de bizcochos duros (soletilla) y los mojamos con café. Sobre una capa de bizcochos mojados en café, ponemos una capa de crema de mascarpone, después otra de bizcochos, otra de crema... etc. Sube los niveles que quieras, hasta terminar con una capa de crema.
+          Tamiza sobre la última capa un poco de chocolate amargo en polvo. El tiramisú es un postre que debe estar en la nevera unas horas.</p>
+      </div>
+      <div class="receta" id="dos">
+
+        <h3>Tarta de chocolate</h3>
+        <img src="recetas/miniaturas/tarta_chocolate.jpg" alt="Tarta de chocolate">
+        <p>
+          Ponemos a cocer la leche, con la ramita de canela, el azúcar y la piel de limón.
+          Lavamos el arroz con abundante agua fría para quitarle el almidón.
+          Cuando la leche cueza, añadimos el arroz y cocemos a fuego medio / bajo casi una hora, hasta que el arroz esté blando y la leche haya espesado lo suficiente (aquí se puede controlar por gustos, arroz con leche más espeso o más líquido), retiramos la corteza de limón y la canela en rama y servimos en cuencos, dejamos enfriar y espolvoreados por encima con canela en polvo.</p>
+      </div>
+      <div class="receta" id="tres">
+
+        <h3>Crema catalana</h3>
+        <img src="recetas/miniaturas/crema_catalana.jpg" alt="Crema catalana">
+        <p>Poner a fuego suave en una cazuela 2 tazas de leche. Batir en un bol las cuatro yemas de huevo, a los que se añaden 3 cucharadas de azúcar (reservando dos) y una cucharada de maizena. Remover con las barillas hasta conseguir una crema sin grumos.
+          Ésta mezcla se añade poco a poco a la leche, y subimos el fuego para hervir, durante 5 minutos sin dejar de mover.
+          La crema catalana se sirve en boles o platos individuales, a los cuales se les echa azúcar por encima y se quema para crear una costra de caramelo. Se sirve caliente.</p>
+      </div>
+      <div class="receta" id="cuatro">
+
+        <h3>Dulce de leche</h3>
+        <img src="recetas/miniaturas/dulce_leche.jpg" alt="Dulce de leche">
+        <p>Colocar todos los ingredientes en un recipiente grande, preferentemente de cobre o aluminio, a fuego fuerte, durante unas horas, hasta que tome color y comience a hervir.
+          Tener especial cuidado al romper el primer hervor, revolver y evitar que se derrame.
+          Dejar hervir espesar, bajar el fuego al mínimo revolviendo cada tanto
+          con una cuchara de madera.
+          Cuando al sacar un poquito en un plato, y dividirlo por la mitad con una cuchara, no se unen las partes, está hecho.
+          Al sacarlo del fuego, continuar revolviendo durante un rato hasta que pierda un poco de temperatura pues de lo contrario, se puede cortar. Al retirarlo del fuego, y mientras se revuelve, se puede apoyar el recipiente sobre agua fría para ayudar a entibiar más rápido
+        </p>
+      </div>
+      <div class="receta" id="cinco">
+
+        <h3>Tarta de manzana</h3>
+        <img src="recetas/miniaturas/tarta_manzana.jpg" alt="Tarta de manzana">
+        <p>Sobre una bandeja de horno se coloca un papel para hornear (o se unta la bandeja del horno con mantequilla), colocamos el hojaldre doblado por los bordes a modo de caja, como de 1 ó 2 centímetros de alto, para contener la crema pastelera y dar forma a la tarta de manzana.
+          Preparamos una crema pastelera, con leche, canela, 4 yemas de huevo, 100 gr de azúcar glass y una cucharada de maizena. Poner en la cazuela la leche con la canela. Aparte, mezclar en un bol las yemas, el azúcar y la maizena. Cuando la leche vaya a hervir, añadir la mezcla de yemas del bol. Dejar cocer unos minutos a fuego lento sin dejar de remover hasta que espese.
+          Vertemos la masa pastelera sobre la masa de hojaldre que habíamos colocado en la bandeja. Pelamos y partimos las manzanas en finas rodajas y las vamos colocando por encima de la crema de la tarta hasta que quede totalmente cubierta.
+          Cubrimos con una fina capa de mermelada y horneamos a 180º durante 25 minutos aproximadamente.</p>
+      </div>
+      <div class="receta" id="seis">
+
+        <h3>Arroz con leche</h3>
+        <img src="recetas/miniaturas/arroz_leche.jpg" alt="Arroz con leche">
+        <p>Ponemos a cocer la leche, con la ramita de canela, el azúcar y la piel de limón.
+          Lavamos el arroz con abundante agua fría para quitarle el almidón.
+          Cuando la leche cueza, añadimos el arroz y cocemos a fuego medio / bajo casi una hora, hasta que el arroz esté blando y la leche haya espesado lo suficiente (aquí se puede controlar por gustos, arroz con leche más espeso o más líquido), retiramos la corteza de limón y la canela en rama y servimos en cuencos, dejamos enfriar y espolvoreados por encima con canela en polvo.</p>
+      </div>
+
+
+    </main>
+    <footer>
+      <div>Diseño de Interfaces Web-2023</div>
+      <div>Leiker Castillo</div>
+    </footer>
+
+  </div>
+
+
+</body>
+</html>
