@@ -225,5 +225,5 @@ footer div {
 
 /*notas::::::::::::::::
   hiden reserva espacio, display none no reserva hasta que es visible
-  :active hace que aplique estilos mientras se pulsa sobre el elemento o se pulsa space
-  :target establece estilos a los elementos que a los que correspode la URL*/
+  :active hace que aplique estilos mientras se pulsa sobre el elemento o se pulsa space estando sobre él
+  :target establece estilos a los elementos a los que correspode la URL del enlace*/
