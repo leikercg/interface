@@ -1,0 +1,97 @@
+VANDAL:
+1. Visibilidad del estado del sistema::::::::::::::
+    No cuenta con mucha información de donde nos encontramos en la Web, solo el título y no en todas las páginas.
+    No cunmple con este princio.
+
+
+2. Correspondencia entre los contenidos::::::::::::::
+del sitio Web y el mundo real, adaptaciñon del lenguaje, iconos, motrar errores
+
+    El orden de los arículos dentro de las seciones están ordenados por fechas, asi que esto facilita la busqueda al usuario, mantiene cierto orden.
+    No mezcla palabras en inglés como login o log out
+    Si que cumple este principio.
+
+
+
+3. Control y libertad del usuario
+    Si  que puedes volver sobre tus pasos::::::::::::::
+    Se cumple este principio, puedes moverte libremente desde cualquier página a cualquier otra pagina sin tener que hacer un recorrido muy largo.
+
+4. Coherencia y estándares::::::::::::::
+    Si que sigue los estandares de los días de hoy, respesta el ícono del menú desplegable, el ícono de loginy el ícono de buscar.
+    Y si mantiene un diseño en todas las páginas.
+
+5. Prevención de errores::::::::::::::
+
+
+6. Reconocimiento en vez de memorizar::::::::::::::
+        Aparecen iconos usados como estandar, por que es facil reconocer que hace o a que se refiere ese icono.
+        Al escribir en la barra de búsqueda, según lo que escribes te da sugerencias, por lo que si te suena el nombre de lo que buscas no hace falta que lo escribas del todo.
+        Ademas junto a los videojuego salen sus portadas, lo que facilita reconocerlos.
+
+7. Flexibilidad y eficiencia de uso::::::::::::::
+
+    Si que se cumple, al realizar una búsqueda aparece una pequeña barra para filtrar el timpo de articulo que estás buscando, si es de un foro, si contiene imágenes, videos.
+
+8. Diseño estético y minimalista::::::::::::::
+    No cumple con este principio, cuenta con demasiada publicidad, distrae mucho al usuario, ademas el tamaño de la fuente de los artículos es algo pequeña, lo que cansa la vita.
+
+9. Ayudar al usuario a reconocer,
+diagnosticar y recuperarse de los errores::::::::::::::
+
+    Si lo cumple, al realizar búsquedas que no ofrecen resultados nos indica por que no aparecen resultados, por otro lado al ingresar mal el correo al registrarme, o logear, y la petición es rechazada te indica por que ha sido rechazada. (usuariono existente, contraseña erronea...)
+
+10.Ayuda y documentación::::::::::::::
+
+    No cuenta con ayudas para la navegación, se echa de menos una sección de preguntas frecuentes. No cumple con este principio.
+
+
+
+
+
+
+
+RENFE:
+1. Visibilidad del estado del sistema::::::::::::::
+
+    Si que permite ver si estás logeado.
+    Permite saber en que fase de la compra rte encuentras
+
+2. Correspondencia entre los contenidos::::::::::::::
+    del sitio Web y el mundo real
+
+    Si que se cumple. Usa palabras entendibles por cualquier usuario, tiene la funcion de buscar viajes por fecha en un calendario, lo cual es muy intuitivo.
+
+3. Control y libertad del usuario
+    Si  que puedes volver sobre tus pasos::::::::::::::
+    Si que se cumple esta función: Al realizar la compra de unos billetes, en cualquier momento de la operación se ouede cancelar, retroceder para modificar variables etc
+
+4. Coherencia y estándares::::::::::::::
+    Si que sigue los estandares de los días de hoy. Los iconos de login y buscar estan presentes y dejam calra su función.
+    Ademas mantiene un diseño continuado en todas las páginas.
+
+5. Prevención de errores::::::::::::::
+    Cumple este principio, no te deja registrarte si no responders un cuestionario y si no incluyes un e-mail valido. Comprueba algunos valores del formualario en tiempo real.
+
+    Si implementa este principio por que evita errores no dejandote buscar billetes si no has seleccionado nada.
+
+6. Reconocimiento en vez de memorizar::::::::::::::
+
+    Cuenta con iconos de uso estandarizado, lo que facilita saber que uso tiene ese icono.
+    Cuaando escribes una ciudad te sugiere las estaciones y viceversa.
+
+7. Flexibilidad y eficiencia de uso::::::::::::::
+    Se cumple este principio, en el apartado de compra de billetes te permite realizae busquedas más eficaces, cuenta con filtros y opciones para ordenar las búsquedas
+
+    Permite el uso de varios idiomas.
+
+8. Diseño estético y minimalista::::::::::::::
+    Cuenta con un diseño algo recargado de publicidad, pero sin llegar a ser molesto, los colores y diseño de la web es continua en toda la página, asi que podemos decir que si que se cumple este principio.
+
+9. Ayudar al usuario a reconocer,
+    diagnosticar y recuperarse de los errores::::::::::::::
+    Si cumple este principio, al ingresar datos erroneos en ek formulario de suscripción te dice que campos están mal.
+
+10.Ayuda y documentación::::::::::::::
+ También lo cumple, tiene una sección de ayudas para determinados temas y cuenta con una sección de FAQs.
+
