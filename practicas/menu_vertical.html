@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background-color: aqua;
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .padre {
+      height: 30px;
+      width: 150px;
+    }
+
+    .padre:hover .padre1 {
+      display: block;
+    }
+
+    .padre .padre1 {
+      display: none;
+    }
+
+    .padre1 {
+      position: relative;
+      top: 16px;
+      left: -5px;
+      width: 150px;
+    }
+    .padre1.padre1{
+      margin: -1px;
+    }
+
+    .padre2{
+      position: absolute;
+      top: -1px;
+      left: 160px;
+      width: 150px;
+    }
+
+    .padre3{
+      position: relative;
+      left: 156px;
+      top: -23px;
+      margin: -1px;
+    }
+
+    .padre1:hover .padre2 {
+      display: block;
+    }
+
+    .padre1 .padre2 {
+      display: none;
+    }
+
+    .padre2 .padre3 {
+      display: none;
+    }
+
+    .padre2:hover .padre3 {
+      display: block;
+    }
+    div{
+      height: 31px;
+      width: 100px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="padre">Menu
+
+    <div class="padre1">Tania
+      <div class="padre2">Quiere a Leiker</div>
+    </div>
+    <div class="padre1">Leiker
+      <div class="padre2">Odia a
+        <div class="padre3">Tania Averruz</div>
+      </div>
+    </div>
+    <div class="padre1">Ambos
+      <div class="padre2">Tienen
+        <div class="padre3">Sexo</div>
+        <div class="padre3">Sexo</div>
+        <div class="padre3">Sexo</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

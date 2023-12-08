@@ -1,0 +1,12 @@
+Display bloack : acepta margenes, relleno, altura y anchura.
+                salto de linea antes y despues.
+                Todo el ancho.
+
+Display inline: Solo el ancho necesario. a,input,img,span,br,cite,code,abbr
+                No acepta ni alturas ni anchura, pero si rellenos.
+                Sin salto de linea antes ni despues.
+                Aceptan márgenes horizontales, pero no verticales.
+
+Display: inline-block: acepteptan todos loas margenes.
+                        aceptan alturas y anchuras.
+                        No tiene salto de linea ni antes ni despues.

@@ -1,0 +1,11 @@
+Relative: mueve el elemento respecto la posicion que le tocaría en el flujo normal.
+            guarda el esacio, su hueco no se rellena.
+            un elemento absoluto dentro se mueve repescto a su esquina superior.
+
+absoluto: No reserva el espacio, se rellena, se mueve respecto al primero elemento ancestro no static.
+
+fixed: se posiciona respecto al navegador
+        siempre esta visible.
+        no reserva su posicion.
+
+sticky : se comporta como relative hasta llegar a la posicion marcada que se comporta fixed
