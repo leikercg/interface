@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      text-align: center;
+    }
+    /*@media (orientation: landscape) {
+<!-- Aquí van todos los estilos CSS -->
+}*/
+    @media (max-width:500px) {
+
+      /*incluye a 500*/
+      div::after {
+        content: "Ancho <= 500";
+      }
+
+      div {
+        background-color: bisque;
+      }
+    }
+
+    @media (max-width:699px) and (min-width:501px) {
+      div::after {
+        content: "Ancho < 700 y mayor que 500";
+      }
+
+      div {
+        background-color: rgb(226, 196, 255);
+      }
+    }
+
+    @media (min-width:700px) {
+      div::after {
+        content: "Ancho >= 700";
+      }
+
+      div {
+        background-color: rgb(196, 275, 208);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div></div>
+
+</body>
+</html>

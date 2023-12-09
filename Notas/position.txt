@@ -8,4 +8,6 @@ fixed: se posiciona respecto al navegador
         siempre esta visible.
         no reserva su posicion.
 
-sticky : se comporta como relative hasta llegar a la posicion marcada que se comporta fixed
+sticky : se comporta como relative hasta llegar a la
+        posicion marcada que se comporta fixed(no se puede posiconar por coordenadas,
+        sigue el flujo de normal del documento)
