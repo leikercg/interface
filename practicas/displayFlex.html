@@ -5,36 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    *{
+    * {
       margin: 0px;
     }
-    body{
-      margin: 0px;
-      min-width: 100vw;
+
+    body,
+    html {
+      /*centrar*/
+      margin: auto;
+      min-width: 60vw;
+      max-width: 90vw;
       display: flex;
-      justify-content: center;
+      /* justify-content: flex-end; lo alinea desde el final*/
+      /*flex-direction: row-reverse; los alinea desde el final y del reves*/
+      /*order para cambiar el orden de los hijos*/
+      flex-wrap: wrap;
+      position: relative;
+
     }
-    .flex{
-      height: 300px;
-      width: 300px;
+
+    .flex {
+
+      height: 30px;
+      width: 30px;
       background-color: aquamarine;
       border: 1px solid black;
       display: flex;
       float: right;
 
     }
-    .noflex{/*como son elementos en linea ocupan todo el espacio*/
+
+    .noflex {
+      /*como son elementos en linea ocupan todo el espacio*/
       height: 300px;
       width: 300px;
       background-color: blue;
       border: 1px solid black;
     }
+
   </style>
 </head>
+
 <body>
 
-  <div class="flex"></div>
+  <div style="background-color:bisque; position:absolute; top:50px;" class="flex"></div>
   <div class="noflex"></div>
+  <div class="flex"></div>
+  <div style="background-color: bisque;" class="flex"></div>
+  <div class="noflex"></div>
+  <div class="flex"></div>
+  <div style="background-color: bisque;" class="flex"></div>
+  <div class="noflex"></div>
+  <div class="flex"></div>
+  <div style="background-color: bisque;" class="flex"></div>
   <div class="noflex"></div>
   <div class="flex"></div>
 </body>

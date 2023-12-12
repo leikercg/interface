@@ -10,3 +10,13 @@ Display inline: Solo el ancho necesario. a,input,img,span,br,cite,code,abbr
 Display: inline-block: acepteptan todos loas margenes.
                         aceptan alturas y anchuras.
                         No tiene salto de linea ni antes ni despues.
+
+Display:flex : Los elementos hijos se comportan como elementos flexibles. No atiendes display bloc,inline o inline block
+            para ser movidos hay que usar contedores que ocupen una posicion fija y ajustarlos dentro.
+
+            /* justify-content: flex-end; lo alinea desde el final*/
+            /*flex-direction: row-reverse; los alinea desde el final y del reves*/
+            /*order para cambiar el orden de los hijos*/
+              order cuanto mas alto aparece antes
+
+            si aun elemento dentro de un contenedor flex se le aplica positio absolute sale del flujo de los elementos
