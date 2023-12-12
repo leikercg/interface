@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      text-align: center;
+    }
+    /*@media (orientation: landscape) {
+<!-- Aquí van todos los estilos CSS -->
+}*/
+
+
+    @media (max-width:490px) {/*estilos para menos de 500px de ancho*/
+      /* no incluye a 500*/
+      div{
+        font-size: small; /*letra pequeña si es menor de 500px*/
+      }
+      div::after {
+        content: "Ancho < 500"; /*el texto que debe aparecer*/
+      }
+
+      div {
+        background-color: orange;/*estilos parecidos a los pedidos*/
+        border: 1px solid black;
+      }
+    }
+
+
+
+/*estilos para mayores o igual que 500 y menores que 700*/
+    @media (max-width:699px) and (min-width:500px) {
+      div::after {
+        content: "700 > Ancho >= 500";/*contenido*/
+
+      }
+/*dejamos el tamaño de la letra por defecto*/
+      div {
+        background-color:pink;
+        border: 1px solid black;/*estilos parecidos a los pedidos*/
+      }
+    }
+
+    @media (min-width:700px) {
+      div{
+        font-size: large;/*tamaño de letra grande*/
+      }
+      div::after {
+        content: "Ancho >= 700";/*contenido*/
+      }
+
+      div {
+        background-color: green;
+        border: 1px solid black;/*estilos parecidos a los pedidos*/
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div></div>
+
+</body>
+</html>

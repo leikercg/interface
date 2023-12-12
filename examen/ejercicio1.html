@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul,
+    /*quitamos todos los estilos de las listas que pone por defecto el navegador para personalizarlas nosotros más adelante*/
+    li {
+      margin: 0px;
+      list-style: square;
+    }
+
+    .contenedor {
+      /*definimos el estilo del contenedor que va a recoger las palabras y traducciones*/
+      border: 2px solid black;
+      /*estilo parecido/aproximado al pedido*/
+      width: 400px;
+      height: 80px;
+      border-radius: 3px;
+
+      display: flex;
+      /*le aplicamos un estilo display:flex para centrar su contenido verticalmente*/
+      align-items: center;
+    }
+
+    .centrar {
+      /*aplicamos estilos al contenor que contine las plabras dentro del contenedor principal, este contenedor solo es para centrar los elementos gracias a su ancestro que es flex*/
+      width: 200px;
+    }
+
+    /****************************************************************/
+
+    .palabra {/*es una ul que contiene dos elementos li, la palabra y la traducción*/
+      display: flex;/*flex para que aparezcan una al lado de la otra (sus elementos contendos)*/
+      position: relative;/*relative para darle posicion a un elemento (clase oculta) que está dentro de este elemento*/
+    }
+
+    .oculto {
+      /*es la clase que contiene la traduccion*/
+      list-style: none; /*al ser un li tiene vileta, con esto la eliminamos*/
+      position: absolute;/*con esto le decimos que se desplace a x cordendas respecto al contenedor ancestro que no tenga position static (la clase palabra)*/
+      left:120px;/*lo movemos 120px respecto a la izquierda de la poscion de su ancestro no static para lograr un estilo parecido al pedido*/
+
+      display: none;/*todos los estilos declarados en esta clase no seran visibles gracias a este atributo*/
+    }
+
+/*****************************hover*********************************/
+
+li:hover +.oculto{/* con esto decimos que los li que tenga un hermano adyacente de la clase oculto y que ademas ese li este debajo del rato seguira estos estilos*/
+  display: block; /*serán visibles*/
+}
+
+
+  </style>
+</head>
+
+
+<body>
+  <p id="titulo"><strong>Vocabulario: Inglés - Español</strong></p>
+  <div class="contenedor">
+    <div class="centrar">
+      <div>
+        <ul class="palabra">
+          <li>Car</li>
+          <li class="oculto">Coche</li>
+        </ul>
+
+      </div>
+      <div>
+        <ul class="palabra">
+          <li>Window</li>
+          <li class="oculto">Ventana</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="palabra">
+          <li>Door</li>
+          <li class="oculto">Puerta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

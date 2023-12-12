@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body,
+  html {
+    /*esto es para centar y eliminar los margenes por defecto*/
+    margin: 0px;
+    height: 100vh;/*definimos el tamaño del body y html*/
+    width: 100vw;
+    color: white;/*todos los textos dentran color blanco*/
+  }
+
+  .relleno {
+    /*esto es usado para centrar verticalmente*/
+    width: 100%;
+    height: 33%;
+  }
+
+  .azul {
+    width: 33%;
+    /*al ser div ocupa todo el ancho y tiene salto de linea*/
+    height: 33%;
+    border: 1px black solid;
+    border-radius: 5%;/*borde redondeado*/
+    background-color: blue;
+    margin: auto;
+    /*esto siver para centar horizontalmete con respecto al padre*/
+     position: relative;
+  }
+
+  .verde {
+
+    /*al ser div ocupa todo el ancho y tiene salto de linea*/
+    height:33% ;
+    width: 33%;
+    border: 1px black solid;
+    background-color: green;
+    border-radius: 50%;
+    margin: auto;
+    /*esto siver para centar horizontalmete con respecto al padre*/
+    position: relative;
+  }
+
+  .naranja{
+     /*al ser div ocupa todo el ancho y tiene salto de linea*/
+    height: 33%;
+    width: 33%;
+    border: 1px black solid;
+    background-color: orange;
+    border-radius: 50%;
+    margin: auto;
+    /*esto siver para centar horizontalmete con respecto al padre*/
+    position: relative;
+  }
+  .rojo{
+
+     /*al ser div ocupa todo el ancho y tiene salto de linea*/
+    height: 33%;
+    width: 33%;
+    border: 1px black solid;
+    background-color:red;
+    border-radius: 50%;
+    margin: auto;
+    /*esto siver para centar horizontalmete con respecto al padre*/
+    position: relative;
+  }
+  .texto30,.texto50,.texto40{/*definimos para estos elementos posicion absoluta*/
+    position: absolute;
+  }
+  .texto30{/*al ser obasoluta su posición se puede poscionar respecto a su padre, que es relative*/
+    left: 40%;
+  }
+  .texto40{/*al ser obasoluta su posición se puede poscionar respecto a su padre, que es relative*/
+    left: 33%;
+  }
+
+
+
+</style>
+
+<body>
+  <div class="relleno"></div>
+  <div class="azul">
+    <div class="relleno"></div>
+    <div class="verde"><span class="texto30">30</span>
+      <div class="relleno"></div>
+      <div class="naranja"><span class="texto40">40</span>
+        <div class="relleno"></div>
+        <div class="rojo"><span class="texto50">50</span></div>
+        <div class="relleno"></div>
+      </div>
+    </div>
+    <div class="relleno"></div>
+  </div>
+  <div class="relleno"></div>
+
+</body>
+</html>
