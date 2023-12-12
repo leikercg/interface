@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body,html{
+      padding: 10px;
+      max-height: 95vh;
+      margin: 0px;
+      display:  flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+
+    }
+    .contenedor{
+
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .madrid {
+      display: none;
+    }
+
+    .barsa {
+      display: none;
+    }
+
+    .atm {
+      display: none;
+    }
+    #atm:checked ~.atm{
+      display: block;
+    }
+    #bcn:checked ~ *:not(.barsa){
+      background-color: aqua;
+    }
+
+    #bcn:checked ~.barsa{
+      display: block;
+    }
+    #mdr:checked ~.madrid{
+      display: block;
+    }
+    #bcn:checked ~ *:not(.barsa),
+#atm:checked ~ label,
+#mdr:checked ~ label {
+  background-color: aqua;}
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <label for="">Atletico Madrid</label>
+    <input type="radio" id="atm" name="elige"><br><br>
+    <label for="">Barsa</label>
+    <input type="radio" id="bcn" name="elige"> <br><br>
+    <label for="">Madrid</label>
+    <input type="radio" id="mdr" name="elige"><br><br>
+    <img src="atm.png" class="atm" id="imgatm" alt="">
+    <img src="madrid.png" class="madrid" alt="">
+    <img src="barsa.jpg" class="barsa" alt="">
+    <img src="madrid.png" alt="">
+
+
+  </div>
+
+
+</body>
+</html>

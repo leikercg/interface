@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0px;
+    }
+    body{
+      margin: 0px;
+      min-width: 100vw;
+      display: flex;
+      justify-content: center;
+    }
+    .flex{
+      height: 300px;
+      width: 300px;
+      background-color: aquamarine;
+      border: 1px solid black;
+      display: flex;
+      float: right;
+
+    }
+    .noflex{/*como son elementos en linea ocupan todo el espacio*/
+      height: 300px;
+      width: 300px;
+      background-color: blue;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flex"></div>
+  <div class="noflex"></div>
+  <div class="noflex"></div>
+  <div class="flex"></div>
+</body>
+</html>

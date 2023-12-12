@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    p::first-letter {
+      color: initial; /* Color inicial de la primera letra */
+      transition: color 0.3s; /* Agregar una transición de color suave */
+    }
+
+    p:hover::first-letter { /*un p en estado hover modifica su primera letra a*/
+      color: red; /* Color al pasar el ratón sobre el párrafo */
+    }
+    p:active::after{/*un elemento en  estado active modificará su suedoeleemto after así*/
+      background-color: antiquewhite;
+      content: "hola";
+    }
+  </style>
+  <title>Cambiar color primera letra al pasar el ratón</title>
+</head>
+<body>
+
+  <p>Este es un ejemplo de párrafo. La primera letra cambiará de color al pasar el ratón sobre ella.</p>
+
+</body>
+</html>
