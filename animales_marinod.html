@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      max-width: 100vw;
+      background-color: antiquewhite;
+    }
+
+    .contenedor {
+      width: 500px;
+      height: 500px;
+      margin: auto;
+      background-image: url(animales-marinos.png);
+      position: relative;
+    }
+    .caballito,.tortuga,.medusa,.pez,.cangrejo,.ballena{
+      position: absolute;
+      background-image: url(animales-marinos.png);
+    }
+
+
+    .caballito{
+      height: 300px;
+      width: 150px;
+    }
+    .caballito:hover {
+      background-position: 0 -500px;
+    }
+
+    .tortuga{
+      left: 150px;
+      height: 170px;
+      width: 260px;
+      background-image: none;
+
+    }
+    .tortuga:hover {
+      background-image: url(animales-marinos.png);
+      background-position:-150px -500px;
+    }
+
+    .medusa{
+      left: 300px;
+      top: 150px;
+      height: 170px;
+      width: 170px;
+    }
+    .medusa:hover {
+      background-image: url(animales-marinos.png);
+      background-position:-300px -1150px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="caballito"></div>
+    <div class="tortuga"></div>
+    <div class="medusa"></div>
+    <div class="pez"></div>
+    <div class="cangrejo"></div>
+    <div class="ballena"></div>
+  </div>
+</body>
+</html>
