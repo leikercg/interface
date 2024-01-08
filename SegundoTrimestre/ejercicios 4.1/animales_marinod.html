@@ -21,7 +21,6 @@
     }
     .caballito,.tortuga,.medusa,.pez,.cangrejo,.ballena{
       position: absolute;
-      background-image: url(animales-marinos.png);
     }
 
 
@@ -30,10 +29,12 @@
       width: 150px;
     }
     .caballito:hover {
+      background-image: url(animales-marinos.png);
       background-position: 0 -500px;
     }
 
-    .tortuga{
+    .tortuga{/*usar coordenadas negativas para situar arriba a la izquierda*/
+      /*usar un cuadrado para seguir la situación del elemento*/
       left: 150px;
       height: 170px;
       width: 260px;
@@ -46,14 +47,40 @@
     }
 
     .medusa{
-      left: 300px;
+      left: 270px;
       top: 150px;
       height: 170px;
-      width: 170px;
+      width: 130px;
+      background-image: none;
     }
     .medusa:hover {
       background-image: url(animales-marinos.png);
-      background-position:-300px -1150px;
+      background-position:-270px -1150px;
+    }
+
+    .cangrejo{
+      width: 160px;
+      height: 140px;
+      left: 100px;
+      top: 110px;
+      background-image: none;
+    }
+    .cangrejo:hover{
+      background-image: url(animales-marinos.png);
+      background-position: -100px -1110px;
+    }
+
+    .pez{
+      width: 130px;
+      height: 140px;
+      left: 0px;
+      top: 290px;
+      background-image: none;
+    }
+    .pez:hover{
+      background-image: url(animales-marinos.png);
+      background-position: -0px -791px;
+
     }
 
 
