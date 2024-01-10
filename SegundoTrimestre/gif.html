@@ -8,7 +8,7 @@
 <style>
 @keyframes cartero {/*navegadores modernos*/
 from {
-background-position: 0px;
+background-position: 0px;/*si se cambia a porcentajes la cosa cambia REVISAAAAAAAAAAAAAAAAAAAAAAAR*/
 }
 
 to {
@@ -57,6 +57,7 @@ background-position: -560px;
 }
 /************************************ESTO ES BORRABLE HASTA AQUI ABAJO************/
 .recorte {
+/*560/8=70px de ancho*/
 width: 70px;
 height: 112px;
 background-image: url("cartero.png");
@@ -64,8 +65,8 @@ background-image: url("cartero.png");
 -webkit-animation: cartero .8s steps(8, end) infinite;
 -moz-animation: cartero .8s steps(8, end) infinite;
 -o-animation: cartero .8s steps(8, end) infinite;*/
-animation: cartero .8s steps(8, end) infinite alternate;
-/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones rebotar*/
+animation: cartero .8s steps(8, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
 }
 </style>
 </head>
