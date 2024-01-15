@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+@keyframes dinoStop {
+from {
+background-position: 0px 0px ; /*BASE X ALTURA*/
+}
+
+to {
+background-position: -1700px 0px  ;
+}
+}
+
+
+@keyframes dinoDead {
+from {
+background-position: 0px -236px;/*X     Y*/
+}
+
+to {
+background-position: -1360px -236px;
+}
+}
+
+
+@keyframes dinoJump {
+from {
+background-position: 0px -118px;
+}
+
+to {
+background-position: -2040px -118px;
+}
+}
+
+
+@keyframes dinoRun {
+from {
+background-position: 0px -354px;
+}
+
+to {
+background-position: -1360px -354px;
+}
+}
+
+
+@keyframes dinoWalk {
+from {
+background-position: 0px -472px;
+}
+
+to {
+background-position: -1700px -472px;
+}
+}
+
+
+#gif {/*Aquí establecemos como debe ser por defecto*/
+width: 170px;
+height: 118px;
+background-image: url("dinoHojaSprite.png");
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+
+[id="Stop"]:checked ~ #gif  {/*Aqui establecemos que comportamineto debe tener al  ponernos sobre */
+animation: dinoStop .7s steps(10, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+[id="Dead"]:checked ~ #gif {/*Aqui establecemos que comportamineto debe tener al  ponernos sobre */
+animation: dinoDead .7s steps(8, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+[id="Jump"]:checked ~ #gif  {/*Aqui establecemos que comportamineto debe tener al  ponernos sobre */
+animation: dinoJump .7s steps(12, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+[id="Run"]:checked ~ #gif  {/*Aqui establecemos que comportamineto debe tener al  ponernos sobre */
+animation: dinoRun .7s steps(8, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+[id="Walk"]:checked ~ #gif  {/*Aqui establecemos que comportamineto debe tener al  ponernos sobre */
+animation: dinoWalk .7s steps(10, end) infinite ;
+/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+}
+  </style>
+</head>
+<body>
+
+<input type="radio" name="eleccion" id="Stop">Stop<br><br>
+<input type="radio" name="eleccion" id="Dead">Dead<br><br>
+<input type="radio" name="eleccion" id="Jump">Jump<br><br>
+<input type="radio" name="eleccion" id="Run">Run<br><br>
+<input type="radio" name="eleccion" id="Walk">Walk<br><br>
+<div id="gif"></div>
+
+</body>
+</html>
