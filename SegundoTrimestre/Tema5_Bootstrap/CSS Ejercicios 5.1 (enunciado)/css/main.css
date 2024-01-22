@@ -1,13 +1,15 @@
 .container {
     border: 5px solid red;
-    }
-    .celda {
-    border: 5px solid blue;
-    }
-.container-fluid {
-        border: 5px solid red;
-        }
-        .celda {
-        border: 5px solid blue;
-        }
+}
 
+.celda {
+    border: 5px solid blue;
+}
+
+.container-fluid {
+    border: 5px solid red;
+}
+
+.celda {
+    border: 5px solid blue;
+}
