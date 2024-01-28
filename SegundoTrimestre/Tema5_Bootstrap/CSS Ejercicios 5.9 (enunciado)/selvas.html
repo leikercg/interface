@@ -30,7 +30,8 @@
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Paisajes</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="desiertos.html">Desiertos</a></li>
-              <li><a class="dropdown-item" href="junglas.html">junglas</a></li>
+              <li><a class="dropdown-item" href="selvas.html">Selvas</a></li>
+              <li><a class="dropdown-item" href="oceanos.html">Océanos</a></li>
             </ul>
           </li>
         </ul>
@@ -38,14 +39,15 @@
     </div>
   </nav>
 
-  <!-- Primer párrafo móviles y tablets -->
+  <!-- Primer parrafo -->
   <div class="container my-4">
     <h3 class="text-center">Las selvas más grandes de nuestro planeta</h3>
     <p class="alert alert-success text-center w-auto" role="alert">Es sabido por todos que los árboles jugan un papel crucial en la renovación del aire del plantea, pero hablar de las selvas del Amazonas, del Congo y de Indonesia son palabras mayores.</p>
   </div>
   <!--CARRUSEL-->
-  <div class="container my-4">
+  <div class="container my-4 col-7">
     <div id="carouselExampleIndicators" class="carousel slide">
+      <!--INDICADORES A PIE DE FOTO-->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
@@ -74,36 +76,7 @@
           </div>
         </div>
       </div>
-
-      <div class="container my-4">
-        <div class="row justify-content-around">
-          <div class="card col-5">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" role="img" aria-label="Marcador de posición: Cap de imagen" focusable="false" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-              <title>Marcador de posición</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
-            <div class="card-body">
-              <h5 class="card-title">Título de la tarjeta</h5>
-              <p class="card-text">Un texto de ejemplo rápido para desarrollar el título de la tarjeta y constituir la
-                mayor parte del contenido de la tarjeta.</p>
-              <a href="#" class="btn btn-primary">Ve a algún lado</a>
-            </div>
-          </div>
-          <div class="card col-md-5">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" role="img" aria-label="Marcador de posición: Cap de imagen" focusable="false" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-              <title>Marcador de posición</title>
-              <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-            </svg>
-            <div class="card-body">
-              <h5 class="card-title">Título de la tarjeta</h5>
-              <p class="card-text">Un texto de ejemplo rápido para desarrollar el título de la tarjeta y constituir la
-                mayor parte del contenido de la tarjeta.</p>
-              <a href="#" class="btn btn-primary">Ve a algún lado</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <!--FECHAS PARA DESPLAZARSE A DERECHA E IZQUIERDA-->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
@@ -115,44 +88,83 @@
     </div>
   </div>
 
-
-  <!-- Galería de imágenes -->
+  <!-- Segundo parrafo -->
   <div class="container my-4">
-    <div class="row row-gap-4 row-cols-lg-5">
-      <img src="images/desiertos/antartico.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/artico.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/sahara.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/arabia.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/australia.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/gobi.webp" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/kalahari.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/patagonico.jpg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/siria.jpeg" alt="" class="img-fluid col-md-4">
-      <img src="images/desiertos/chihuahua.jpg" alt="" class="img-fluid col-md-4">
+    <p class="alert alert-success text-center w-auto" role="alert">La selva del Amazonas es una maravilla natural que se extiende a través de nueve países sudamericanos: Brasil, Perú, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Surinam y Guayana Francesa. Sin embargo, es en Brasil donde se encuentra la mayor parte de esta selva tropical, que representa más de la mitad de la superficie total de la cuenca amazónica.</p>
+  </div>
+  <!--CARRUSEL-->
+
+  <!--CARDS-->
+  <div class="container my-4 col-12">
+    <div class="row text-center my-4">
+      <h3>Diferencias entre selvas y bosques</h3>
+    </div><!--Clase para centrar texto en bootstrap-->
+
+    <div class="row justify-content-around">
+      <div class="card col-5">
+        <img class="img-fluid" src="images/selvaDif.png" alt="Selva del Congo">
+        <div class="card-body">
+          <h5 class="card-title">Selva</h5>
+          <p class="card-text">
+          <ul>
+            <li>La vegetación es muy densa y variada.</li>
+            <li>Las lianas y enredaderas son características de este ecosistema.</li>
+            <li>Son menos frecuentes que los bosques.</li>
+            <li>Tigres, elefantes, caimanes, boas y jaguares son la fauna típica de la selva.</li>
+            <li>Se dan en zonas tropicales y subtropicales.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      <div class="card col-5">
+        <img class="img-fluid" src="images/bosqueDif.png" alt="Selva del Congo">
+        <div class="card-body">
+          <h5 class="card-title">Bosque</h5>
+          <p class="card-text">
+          <ul>
+            <li>La vegetación es densa y variada, pero no tanto como en las selvas.</li>
+            <li>Los arboles de hoja caduca y pinos son características de este ecosistema.</li>
+            <li>En el bosque hay más cantidad de bosques que de selvas.</li>
+            <li>Osos, lobos, coyotes, corzos y jabalíes son animales típicos de los bosques.</li>
+            <li>Se dan en casi todos las zonas del planeta.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Segundo párrafo solo en móviles -->
-  <div class="container my-4 d-md-none"> <!--display none en medianos y superiores-->
-    <h3>Estos son los desiertos más grandes del mundo:</h3>
-    <ul>
-      <li>El Desierto Antártico, en la Antártida</li>
-      <li>El Desierto Ártico, en la región Ártica</li>
-      <li>El Desierto del Sáhara, en Marruecos, Níger, Sáhara Occidental, Mali, Argelia, Egipto, Chad, Libia, Mauritania, Sudán y Túnez</li>
-      <li>El Desierto de Arabia, en Yemén, Omán, Emiratos Árabes Unidos, Kuwait, Qatar, Bahréin, Jordania, Iraq y Arabia Saudí</li>
-      <li>Los Desiertos de Australia</li>
-      <li>El Desierto de Gobi, en el sur de Mongolia y el norte de China</li>
-      <li>El Desierto de Kalahari, en Botsuana, Namibia y Sudáfrica</li>
-      <li>El Desierto Patagónico, en Argentina y Chile</li>
-      <li>El Desierto de Siria, en Jordania, Iraq, Siria y el sureste de Turquía</li>
-      <li>El Desierto de Chihuaha, en Nevada y Utah y algunas áreas más pequeñas de California, Idaho, Oregón y Wyoming</li>
-    </ul>
+  <!-- Tercer parrafo -->
+  <div class="container my-4">
+    <p class="alert alert-success text-center w-auto" role="alert">La selva del Congo, ubicada en África Central, es otra región crucial para el equilibrio ambiental global. Al igual que la selva del Amazonas, esta selva africana contribuye significativamente a la producción de oxígeno y al secuestro de carbono. La diversidad biológica del Congo es única, albergando especies icónicas como gorilas de montaña y elefantes.</p>
   </div>
+
+  <!--COLLAPSE-->
+  <div class="container text-center my-4">
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Dato curioso
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        La selva es el hogar de más de la mitad de las especies animales del mundo.
+       </div>
+    </div>
+  </div>
+
+
+<!-- Cuarto parrafo -->
+<div class="container my-4 text-center">
+  <h3>Sabías que...</h3>
+  <p class="alert alert-success w-auto" role="alert">El Instituto Nacional del Cáncer de EE.UU. ha identificado 3.000 plantas que son activas contra las células cancerosas. 70% de estas plantas se encuentran en la selva tropical. El veinticinco por ciento de los ingredientes activos en medicamentos contra el cáncer de hoy en día provienen de organismos que sólo se encuentra en la selva tropical.</p>
+</div>
+
 
   <!-- Pie de página -->
   <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
     <div class="container">
-      <p class="text-white m-0">Nombre del alumno | DIW | Sitio Bootstrap</p>
+      <p class="text-white m-0">Leiker Castillo | DIW | Sitio Bootstrap</p>
     </div>
   </div>
 
