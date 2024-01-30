@@ -1,1 +1,9 @@
 offset-2 inicia el espaciado dos columnas por la izquierda!!!
+
+
+w-auto--> ajusta el ancho del contenedor al tamaño del contenido dinámicamente
+
+
+d-flex y justify-content-center para centrar horizontalmente y align-items-center para verticalmente
+
+flex-colum o flex-row para indicar direccion del flex
