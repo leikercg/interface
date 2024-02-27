@@ -20,3 +20,6 @@ Display:flex : Los elementos hijos se comportan como elementos flexibles. No ati
               order cuanto mas alto aparece antes
 
             si aun elemento dentro de un contenedor flex se le aplica positio absolute sale del flujo de los elementos
+
+
+
