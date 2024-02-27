@@ -7,3 +7,45 @@ w-auto--> ajusta el ancho del contenedor al tamaño del contenido dinámicamente
 d-flex y justify-content-center para centrar horizontalmente y align-items-center para verticalmente
 
 flex-colum o flex-row para indicar direccion del flex
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@ SIN SEPARACION ENTRE FILAS @@@@@@@@@@@@@@@@@@@@@@@
+<div class="row no-gutters">
+    <!-- Contenido de las columnas aquí -->
+</div>
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ COLUMNAS @@@@@@@@@@@@@@@@@@@@@@@@@
+Máximo 12 filas por columnas, si se pasa la coumna aparece abajo en otra columna,
+tambien máximo 12 filas si el contenido lo permite por el tamaño
+
+
+--------------------------Adaptarse al ancho de las columnas
+<div class="container">
+<div class="row">
+<div class="celda col-auto">COLUMNA 1</div>
+<div class="celda col-auto">COLUMNA 2 más ancha</div>
+<div class="celda col-auto">COLUMNA 3 algo más ancha</div>
+<div class="celda col-auto">COLUMNA 4 mucho más ancha</div>
+<div class="celda col-auto">COLUMNA 5 la más ancha de todas</div>
+</div>
+</div>
+---------------------------
+
+------------------------ Adaptarse al contenido en dispositivos superiores a md-----
+<div class="celda col-md-auto">COLUMNA 3</div>
+---------------------------------------------------------------------
+
+
+----------------------- Añadir columnas vacias antes---
+ <div class="container"> añade en dispositivos md y superiores 3 columnas vacias por la izquierda  order-md-last 0-12
+        <div class="fila row justify-content-between">
+            <div class="celda col-3 offset-md-3">COLUMNA 1</div>
+            <div class="celda col-3 offset-md-3">COLUMNA 2</div>
+            <div class="celda col-3 offset-md-3">COLUMNA 3</div>
+        </div>
+</div>
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
