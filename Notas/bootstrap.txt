@@ -48,4 +48,17 @@ tambien máximo 12 filas si el contenido lo permite por el tamaño
             <div class="celda col-3 offset-md-3">COLUMNA 3</div>
         </div>
 </div>
+
+----------------------------- GRUTERS------------------------
+ <div class="row g-2"> X E y
+
+ <div class="row gy-5"> y
+
+ <div class="row gx-5"> X
+
+
+ -------------------- OBLIGAR A MARGIN MAXIMO RESPECTO A COLUMNA ANERIOR...
+ <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
