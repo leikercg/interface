@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid"><!--Creamos contenedor de todo el ancho de la pantalla-->
+
+    <div class="row"><!--Creamos una fila-->
+      <!--Esto será lo que se vera antes de ser colapsada-->
+      <!-- indicamos con:
+       navbar-expand-md que se expanta en patallas mayores a md, es decir, esto se vera en lg y siguientes
+        d-none indica que no se vea nada en pantallas xs y superiores,
+        pero con d-sm-block indicamos que se muestre en la barra en pantallas iguales y superiores a sm, es decir no se verá unicamente en XS-->
+      <nav class="navbar navbar-success bg-success navbar-expand-md d-none d-sm-block">
+        <div class="container-fluid">
+          <div class="p-2"> Barra de navegación</div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link font-size-xs" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desplegable</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="paginas/deportes/deportes.html">Acción</a></li>
+                  <li><a class="dropdown-item" href="paginas/deportes/atletismo.html">Otra sección</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+
+          <!--Este boton se mostrara al colapsar y al serpulsado mostrara el contenido inferior-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!--Esto es lo que se verá al pulsar el boton de hamburguesa-->
+      <div class="collapse d-md-none" id="navbarToggleExternalContent">
+        <div class="bg-success p-4 d-sm-block d-none">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link font-size-xs" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Desplegable</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="paginas/deportes/deportes.html">Acción</a></li>
+                <li><a class="dropdown-item" href="paginas/deportes/atletismo.html">Otra sección</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
