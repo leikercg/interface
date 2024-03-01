@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-	<head>
-		<title>Ejemplo Sprite CSS</title>
-		<meta charset="utf-8" />
-		<style>
-			#imagen1, #imagen2, #imagen3, #imagen4 {
-				padding-left: 32px; /* Imágenes en horizontal, anchura de cada una. */
-				height: 36px; /* Imágenes en horizontal, altura de cada una. */
-				background-image: url("Ejemplo-SpriteCSS/Sprite Sonic.png");
-				background-repeat: no-repeat;
+<head>
+	<title>Ejemplo Sprite CSS</title>
+	<meta charset="utf-8" />
+	<style>
+		#imagen1,
+		#imagen2,
+		#imagen3,
+		#imagen4 {
+			padding-left: 32px;
+			/* Imágenes en horizontal, anchura de cada una. */
+			height: 36px;
+			/* Imágenes en horizontal, altura de cada una. */
+			background-image: url("Ejemplo-SpriteCSS/Sprite Sonic.png");
+			background-repeat: no-repeat;
+		}
+
+		#contenedor {
+			width: 30px;
+			height: 36px;
+			border: 1px solid black;
+		}
+
+		#imagen1 {
+			background-position: -226px -95px;
+			/* Coordenada en el punto superior izquierdo, por ejemplo con "Paint". */
+		}
+
+		#imagen2 {
+			background-position: -265px -95px;
+		}
+
+		#imagen3 {
+			background-position: -299px -95px;
+		}
+
+		#imagen4 {
+			background-position: -335px -95px;
+		}
+
+		@keyframes sonic {
+
+			/*navegadores modernos*/
+			from {
+				background-position: -330px -95px;
+				/*si se cambia a porcentajes la cosa cambia REVISAAAAAAAAAAAAAAAAAAAAAAAR*/
 			}
-			
-			#imagen1 {
-				background-position: -226px -95px; /* Coordenada en el punto superior izquierdo, por ejemplo con "Paint". */
+
+			to {
+				background-position: -330px -95px;
+				/*tamaño del sprint*/
 			}
-			#imagen2 {
-				background-position: -260px -95px;
-			}
-			#imagen3 {
-				background-position: -294px -95px;
-			}
-			#imagen4 {
-				background-position: -328px -95px;
-			}
-		</style>
-	</head>
-	<body>
-		<p>Sin sprite<p/>
-		<img src="Ejemplo-SpriteCSS/Sonic1.jpg" height="36px">
-		<img src="Ejemplo-SpriteCSS/Sonic2.jpg" height="36px">
-		<img src="Ejemplo-SpriteCSS/Sonic3.jpg" height="36px">
-		<img src="Ejemplo-SpriteCSS/Sonic4.jpg" height="36px">
-		<hr>
-		<p>Con sprite<p/>
-		<img id="imagen1">
-		<img id="imagen2">
-		<img id="imagen3">
-		<img id="imagen4">
-	</body>
+		}
+
+		#contenedor {
+			/*560/8=70px de ancho*/
+			background-image: url("./SpriteSonic.png");
+			/*-ms-animation: cartero .8s steps(8, end) infinite;
+-webkit-animation: cartero .8s steps(8, end) infinite;
+-moz-animation: cartero .8s steps(8, end) infinite;
+-o-animation: cartero .8s steps(8, end) infinite;*/
+			animation: sonic .8s steps(4, end) infinite;
+			/* nombre .numeroDeSegundos IndicaNumeroDePasos y que eso es el final numero de repeticiones alternate*/
+		}
+
+	</style>
+</head>
+
+<body>
+	<p>Sin sprite</p>
+	<img src="Sonic1.jpg" height="36px">
+	<img src="Sonic2.jpg" height="36px">
+	<img src="Sonic3.jpg" height="36px">
+	<img src="Sonic4.jpg" height="36px">
+	<hr>
+	<p>Con sprite</p>
+	<div id="contenedor"></div>
+
+</body>
 </html>
